@@ -30,4 +30,10 @@ export const items: CollapseProps['items'] = [
     label: 'How much money will I make?',
     children: 'That depends how much your music is streamed and downloaded.',
   },
+  {
+    key: '6',
+    label: 'When will I get paid?',
+    children:
+      'You will be paid 100 days after the end of the month via PayPal, Payoneer.',
+  },
 ];

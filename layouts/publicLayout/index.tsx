@@ -9,7 +9,7 @@ type Props = {
 
 export function PublicLayout({ children }: Props) {
   return (
-    <div className="bg-background-primary text-text-primary">
+    <div className="overflow-x-hidden bg-background-primary text-text-primary">
       <Header />
       <Content>{children}</Content>
       <Footer />

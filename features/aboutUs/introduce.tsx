@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { NavigateButton } from '@/components/ui';
 
 type Props = {};
 
@@ -14,7 +14,7 @@ function Introduce({}: Props) {
       >
         <source src={'/video.mp4'} type="video/mp4" />
       </video>
-      <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-center justify-center">
+      <div className="absolute bottom-2 left-2 right-2 top-2 flex flex-col items-center justify-center">
         <h2 className="section-header mb-1 text-center text-4xl font-bold capitalize leading-tight">
           Release unlimited music everywhere
         </h2>
@@ -23,11 +23,9 @@ function Introduce({}: Props) {
           sales royalties.
         </p>
 
-        <Link href={'/contact'}>
-          <button className="mb-2 mr-2 mt-10 rounded-lg bg-blue-700 px-5 py-2.5 font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Release your first single for free
-          </button>
-        </Link>
+        <NavigateButton href="/contact" className="mt-10">
+          Release your first single for free
+        </NavigateButton>
       </div>
     </div>
   );

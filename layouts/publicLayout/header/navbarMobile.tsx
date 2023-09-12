@@ -30,7 +30,7 @@ function NavbarMobile({}: Props) {
         destroyOnClose
         // closeIcon={null}
       >
-        <ul>
+        <ul className="flex flex-col">
           <Menu />
         </ul>
       </Drawer>

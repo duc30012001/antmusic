@@ -17,11 +17,16 @@ export const publicRoutes: publicRoutesType[] = [
   },
   {
     id: 2,
+    label: 'Pricing',
+    href: '/pricing',
+  },
+  {
+    id: 3,
     label: 'FAQ',
     href: '/faq',
   },
   {
-    id: 3,
+    id: 4,
     label: 'Contact Us',
     href: '/contact',
   },
@@ -42,6 +47,11 @@ export const footerRoutes: footerRoutesType[] = [
         id: '1-1',
         label: 'About us',
         href: '/about',
+      },
+      {
+        id: '1-4',
+        label: 'Pricing',
+        href: '/pricing',
       },
       {
         id: '1-2',
