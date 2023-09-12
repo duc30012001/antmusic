@@ -1,0 +1,32 @@
+.styled-number-input .ant-input-number-group-addon,
+.styled-number-input .ant-input-number-group-wrap {
+  width: 1px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.styled-number-input .ant-input-number-group-addon {
+  position: relative;
+  padding: 0 11px;
+  color: #000000d9;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.styled-number-input .ant-input-number-group-addon:last-child {
+  border-left: 0;
+}
+.styled-number-input .ant-input-number-group > .ant-input-number:last-child,
+.styled-number-input .ant-input-number-group-addon:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* .styled-number-input .ant-input-number-input-wrap > input {
+  text-align: right !important;
+} */
+.styled-number-input .ant-input-number-handler-wrap {
+  display: none !important;
+}
