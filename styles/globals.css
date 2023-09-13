@@ -54,6 +54,14 @@
   @apply !text-base;
 }
 
-/* body * {
-  @apply !font-sans
-} */
+.ck-content {
+  @apply !bg-background-primary;
+  @apply h-80;
+  @apply text-base;
+  @apply !rounded-xl;
+  @apply !border-gray-500;
+}
+
+.ck-editor__top {
+  @apply !hidden;
+}

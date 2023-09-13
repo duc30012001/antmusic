@@ -24,10 +24,6 @@ export const freeData: PricingData = {
       id: 4,
       title: 'In-depth insights, analytics & listener data',
     },
-    {
-      id: 5,
-      title: 'Release unlimited music for 1 artist',
-    },
   ],
 };
 

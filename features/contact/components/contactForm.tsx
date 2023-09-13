@@ -1,11 +1,6 @@
 import { Button, Form, Input } from 'antd';
-import dynamic from 'next/dynamic';
-import 'react-quill/dist/quill.snow.css';
 import { sendContactForm } from '../api';
-
-const ReactQuill = dynamic(() => import('react-quill'), {
-  ssr: false,
-});
+import TextEditor from './textEditor';
 
 type Props = {};
 
@@ -78,7 +73,7 @@ function ContactForm({}: Props) {
           },
         ]}
       >
-        <ReactQuill />
+        <TextEditor />
       </Form.Item>
 
       <div className="text-center">
