@@ -19,7 +19,7 @@ function PriceCard({ data }: Props) {
         ))}
       </ul>
       <h4 className="my-10 text-center text-2xl font-semibold">
-        ${data.price} / month
+        ${data.price} / year
       </h4>
       <div className="text-center">
         <NavigateButton href="/contact">Get Started</NavigateButton>

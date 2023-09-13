@@ -1,3 +1,4 @@
+import AppToast from '@/components/appToast';
 import Seo from '@/components/seo';
 import '@/styles/globals.css';
 import themeConfig from '@/theme/themeConfig';
@@ -35,6 +36,7 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
       <main className={`${inter.variable} font-sans`}>
         <ConfigProvider theme={themeConfig}>
           <Component {...pageProps} />
+          <AppToast />
         </ConfigProvider>
       </main>
     </>

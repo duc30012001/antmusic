@@ -1,5 +1,5 @@
 import Section from '@/components/section';
-import { freeData, proData } from './data';
+import { freeData, proData, superData } from './data';
 import PriceCard from './priceCard';
 
 type Props = {};
@@ -13,6 +13,7 @@ export default function Pricing({}: Props) {
       <div className="flex flex-col items-stretch justify-center gap-10 md:flex-row">
         <PriceCard data={freeData} />
         <PriceCard data={proData} />
+        <PriceCard data={superData} />
       </div>
     </Section>
   );

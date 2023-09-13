@@ -19,7 +19,7 @@ function Section({
   typeContainer,
 }: Props) {
   return (
-    <div className={twMerge('mb-10 py-10', className)}>
+    <div className={twMerge('mb-12 py-10', className)}>
       <Container typeContainer={typeContainer}>
         {title && <SectionTitle title={title} description={description} />}
         {children}

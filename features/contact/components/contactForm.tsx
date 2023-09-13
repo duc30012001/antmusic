@@ -1,10 +1,24 @@
 import { Button, Form, Input } from 'antd';
+import dynamic from 'next/dynamic';
+import 'react-quill/dist/quill.snow.css';
+import { sendContactForm } from '../api';
+
+const ReactQuill = dynamic(() => import('react-quill'), {
+  ssr: false,
+});
 
 type Props = {};
 
 function ContactForm({}: Props) {
+  async function onFinish(values) {
+    await sendContactForm(values);
+    form.resetFields();
+  }
+
+  const [form] = Form.useForm();
+
   return (
-    <Form layout="vertical" size="large">
+    <Form layout="vertical" size="large" onFinish={onFinish} form={form}>
       <Form.Item
         label="Email Address"
         name="email"
@@ -52,24 +66,19 @@ function ContactForm({}: Props) {
       </Form.Item>
 
       <Form.Item
-        label="Content"
-        name="content"
+        label="Message"
+        name="message"
         required
         rules={[
           {
             required: true,
             whitespace: true,
             min: 2,
-            max: 1000,
+            max: 10000,
           },
         ]}
       >
-        <Input.TextArea
-          autoSize={{
-            minRows: 10,
-            maxRows: 15,
-          }}
-        />
+        <ReactQuill />
       </Form.Item>
 
       <div className="text-center">

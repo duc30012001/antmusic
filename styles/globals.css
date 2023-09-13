@@ -47,6 +47,13 @@
   top: 34px;
 }
 
+.ql-container {
+  max-height: 450px;
+  min-height: 200px;
+  overflow: auto;
+  @apply !text-base;
+}
+
 /* body * {
   @apply !font-sans
 } */

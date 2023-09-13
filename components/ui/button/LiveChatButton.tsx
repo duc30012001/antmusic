@@ -1,21 +1,15 @@
-import { FloatButton } from 'antd';
-import { FaTelegramPlane } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa';
 
 type Props = {};
-
-const supportLink = process.env.TELEGRAM;
+const whatsappNumber = process.env.WHATSAPP;
+const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
 export function LiveChatButton({}: Props) {
-  function handleTelegramLinkClick() {
-    window.open(supportLink, '_blank');
-  }
-
   return (
-    <FloatButton
-      icon={<FaTelegramPlane />}
-      type="primary"
-      tooltip="Live Chat"
-      onClick={handleTelegramLinkClick}
-    />
+    <div className="fixed bottom-10 right-5 z-10 rounded-full bg-[#26d367] p-3 text-3xl">
+      <a href={whatsappUrl} target="_blank">
+        <FaWhatsapp />
+      </a>
+    </div>
   );
 }

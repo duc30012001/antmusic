@@ -1,4 +1,5 @@
 import Container from '@/components/container';
+import Action from './action';
 import AppLogo from './appLogo';
 import Navbar from './navbar';
 import NavbarMobile from './navbarMobile';
@@ -14,10 +15,13 @@ function Header({}: Props) {
             <li className="block lg:hidden">
               <NavbarMobile />
             </li>
-            <AppLogo />
+            <li className="hidden lg:block">
+              <AppLogo />
+            </li>
             <li className="hidden lg:block">
               <Navbar />
             </li>
+            <Action />
           </ul>
         </Container>
       </nav>

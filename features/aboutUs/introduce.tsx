@@ -16,7 +16,7 @@ function Introduce({}: Props) {
       </video>
       <div className="absolute bottom-2 left-2 right-2 top-2 flex flex-col items-center justify-center">
         <h2 className="section-header mb-1 text-center text-4xl font-bold capitalize leading-tight">
-          Release unlimited music everywhere
+          Unlimited music distribution to all platforms
         </h2>
         <p className="text-center leading-loose">
           Start distributing your music for free and keep up to 100% of your

@@ -1,5 +1,5 @@
 import Section from '@/components/section';
-import ContactForm from './contactForm';
+import ContactForm from './components/contactForm';
 
 type Props = {};
 

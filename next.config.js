@@ -15,6 +15,11 @@ const nextConfig = {
     APP_DESCRIPTION: process.env.APP_DESCRIPTION,
     APP_SHORT_NAME: process.env.APP_SHORT_NAME,
     APP_IMAGE: process.env.APP_IMAGE,
+    NODEMAILER_SENDER: process.env.NODEMAILER_SENDER,
+    NODEMAILER_RECEIVER: process.env.NODEMAILER_RECEIVER,
+    NODEMAILER_RECEIVER_CC: process.env.NODEMAILER_RECEIVER_CC,
+    NODEMAILER_PASS: process.env.NODEMAILER_PASS,
+    LOGIN_URL: process.env.LOGIN_URL,
   },
   i18n,
   sassOptions: {

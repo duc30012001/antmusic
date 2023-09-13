@@ -5,7 +5,7 @@ export type PricingData = {
 };
 
 export const freeData: PricingData = {
-  title: 'Free',
+  title: 'Artist',
   price: 0,
   data: [
     {
@@ -32,8 +32,8 @@ export const freeData: PricingData = {
 };
 
 export const proData: PricingData = {
-  title: 'Pro',
-  price: 50,
+  title: 'Label',
+  price: 20,
   data: [
     {
       id: 1,
@@ -41,11 +41,30 @@ export const proData: PricingData = {
     },
     {
       id: 2,
-      title: 'Keep 100% of your royalties',
+      title: 'Keep 85% of your royalties',
     },
     {
       id: 3,
-      title: 'Custom your label',
+      title: 'Customize your label',
+    },
+  ],
+};
+
+export const superData: PricingData = {
+  title: 'Multi Label',
+  price: 100,
+  data: [
+    {
+      id: 1,
+      title: 'All free features',
+    },
+    {
+      id: 2,
+      title: 'Keep 85% of your royalties',
+    },
+    {
+      id: 3,
+      title: 'Create up to 10 labels',
     },
   ],
 };
