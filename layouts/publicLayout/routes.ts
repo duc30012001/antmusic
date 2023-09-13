@@ -1,3 +1,4 @@
+import { EMAIL_URL, WHATSAPP_URL } from '@/utils/constants';
 import { ReactNode } from 'react';
 
 const support = process.env.WHATSAPP;
@@ -7,9 +8,15 @@ export type publicRoutesType = {
   id: number | string;
   label: ReactNode;
   href: string;
+  target?: '_self' | '_blank' | '_parent' | '_top';
 };
 
 export const publicRoutes: publicRoutesType[] = [
+  {
+    id: 0,
+    label: 'Home',
+    href: '/',
+  },
   {
     id: 1,
     label: 'About us',
@@ -72,12 +79,14 @@ export const footerRoutes: footerRoutesType[] = [
       {
         id: '2-1',
         label: 'Email: ' + email,
-        href: '',
+        href: EMAIL_URL,
+        target: '_blank',
       },
       {
         id: '2-2',
         label: 'WhatsApp: ' + support,
-        href: '',
+        href: WHATSAPP_URL,
+        target: '_blank',
       },
     ],
   },

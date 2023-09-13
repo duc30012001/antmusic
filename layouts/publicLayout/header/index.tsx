@@ -15,7 +15,7 @@ function Header({}: Props) {
             <li className="block lg:hidden">
               <NavbarMobile />
             </li>
-            <li className="hidden lg:block">
+            <li className="hidden sm:block">
               <AppLogo />
             </li>
             <li className="hidden lg:block">

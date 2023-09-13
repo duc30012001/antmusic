@@ -13,7 +13,9 @@ function FooterNav({}: Props) {
             {item.children.map((child) => (
               <li key={child.id}>
                 {child.href ? (
-                  <Link href={child.href}>{child.label}</Link>
+                  <Link href={child.href} target={child.target ?? '_self'}>
+                    {child.label}
+                  </Link>
                 ) : (
                   <span>{child.label}</span>
                 )}

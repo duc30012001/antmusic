@@ -1,15 +1,15 @@
-import amazonLogo from '@/assets/amazon.svg';
-import appleMusicLogo from '@/assets/apple-music.svg';
-import deezerLogo from '@/assets/deezer.svg';
-import facebookLogo from '@/assets/facebook.png';
-import kkboxLogo from '@/assets/kkbox.png';
-import napsterLogo from '@/assets/napster.png';
-import qobuzLogo from '@/assets/qobuz.png';
-import soundCloudLogo from '@/assets/soundcloud.png';
-import spotifyLogo from '@/assets/spotify.svg';
-import tidalLogo from '@/assets/tidal.png';
-import tikTokLogo from '@/assets/tiktok.svg';
-import youtubeLogo from '@/assets/youtube.svg';
+import amazonLogo from '@/assets/platform/amazon.svg';
+import appleMusicLogo from '@/assets/platform/apple-music.svg';
+import deezerLogo from '@/assets/platform/deezer.svg';
+import facebookLogo from '@/assets/platform/facebook.png';
+import kkboxLogo from '@/assets/platform/kkbox.png';
+import napsterLogo from '@/assets/platform/napster.png';
+import qobuzLogo from '@/assets/platform/qobuz.png';
+import soundCloudLogo from '@/assets/platform/soundcloud.png';
+import spotifyLogo from '@/assets/platform/spotify.svg';
+import tidalLogo from '@/assets/platform/tidal.png';
+import tikTokLogo from '@/assets/platform/tiktok.svg';
+import youtubeLogo from '@/assets/platform/youtube.svg';
 
 export const logoList = [
   {

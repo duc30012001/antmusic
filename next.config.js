@@ -20,6 +20,7 @@ const nextConfig = {
     NODEMAILER_RECEIVER_CC: process.env.NODEMAILER_RECEIVER_CC,
     NODEMAILER_PASS: process.env.NODEMAILER_PASS,
     LOGIN_URL: process.env.LOGIN_URL,
+    ANT_GROUP_WEBSITE: process.env.ANT_GROUP_WEBSITE,
   },
   i18n,
   sassOptions: {

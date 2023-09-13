@@ -1,4 +1,5 @@
 import Section from '@/components/section';
+import { ANT_GROUP_WEBSITE } from '@/utils/constants';
 import style from './aboutStyle.module.css';
 
 type Props = {};
@@ -14,12 +15,19 @@ function About({}: Props) {
     >
       <div className="m-auto w-full text-center text-lg lg:w-5/6">
         <p>
-          ANT Music, owned by ANT Group. We are passionate about music and
-          dedicated to empowering artists and creators to share their talent
-          with the world. We understand that music is a universal language that
-          connects people from all walks of life, and we are committed to
-          providing a platform that amplifies your voice and reaches a global
-          audience.
+          ANT Music is owned by{' '}
+          <a
+            href={ANT_GROUP_WEBSITE}
+            className="underline underline-offset-4"
+            target="_blank"
+          >
+            ANT Group
+          </a>
+          . We are passionate about music and dedicated to empowering artists
+          and creators to share their talent with the world. We understand that
+          music is a universal language that connects people from all walks of
+          life, and we are committed to providing a platform that amplifies your
+          voice and reaches a global audience.
         </p>
         <p className="mt-5">
           Our mission at ANT Music is simple: to make music distribution easy,

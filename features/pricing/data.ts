@@ -51,7 +51,7 @@ export const proData: PricingData = {
 };
 
 export const superData: PricingData = {
-  title: 'Multi Label',
+  title: 'Multiple Labels',
   price: 100,
   data: [
     {
