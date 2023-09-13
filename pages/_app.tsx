@@ -14,6 +14,7 @@ dayjs.extend(localeData);
 const APP_NAME = process.env.APP_NAME ?? '';
 const APP_DESCRIPTION = process.env.APP_DESCRIPTION ?? '';
 const WEBSITE_URL = process.env.WEBSITE_URL ?? '';
+const APP_IMAGE = process.env.APP_IMAGE ?? '';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,7 +29,7 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
           title: APP_NAME,
           url: WEBSITE_URL,
           description: APP_DESCRIPTION,
-          thumbnailUrl: '',
+          thumbnailUrl: APP_IMAGE,
         }}
       />
       <main className={`${inter.variable} font-sans`}>

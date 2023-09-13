@@ -14,6 +14,7 @@ const nextConfig = {
     APP_NAME: process.env.APP_NAME,
     APP_DESCRIPTION: process.env.APP_DESCRIPTION,
     APP_SHORT_NAME: process.env.APP_SHORT_NAME,
+    APP_IMAGE: process.env.APP_IMAGE,
   },
   i18n,
   sassOptions: {
