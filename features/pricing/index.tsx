@@ -10,7 +10,7 @@ export default function Pricing({}: Props) {
       title="Find the plan that best suits you"
       description="Distribute music to over 150 digital stores across 200 countries and territories worldwide. Get daily sales trends for Amazon, iTunes, Apple Music, and Spotify, and keep every cent of what you're owed from sales and streams."
     >
-      <div className="flex flex-col items-stretch justify-center gap-10 md:flex-row">
+      <div className="flex flex-col items-center justify-center gap-10 lg:flex-row lg:items-stretch">
         <PriceCard data={freeData} />
         <PriceCard data={proData} />
         <PriceCard data={superData} />
