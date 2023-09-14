@@ -30,12 +30,15 @@ function About({}: Props) {
           voice and reaches a global audience.
         </p>
         <p className="mt-5">
-          Our mission at ANT Music is simple: to make music distribution easy,
-          accessible, and profitable for independent artists, labels, and
-          musicians of all genres. We believe that every artist deserves the
-          opportunity to be heard and compensated fairly for their work. With
-          ANT Music, you&apos;re not just distributing music; you&apos;re
-          igniting your musical journey.
+          ANT Music has 10 years of experience in the field of music and
+          entertainment, we have been collaborating with many artists and
+          distributing music to most Streaming platforms. Our mission at ANT
+          Music is simple: to make music distribution easy, accessible, and
+          profitable for independent artists, labels, and musicians of all
+          genres. We believe that every artist deserves the opportunity to be
+          heard and compensated fairly for their work. With ANT Music,
+          you&apos;re not just distributing music; you&apos;re igniting your
+          musical journey.
         </p>
       </div>
     </Section>
