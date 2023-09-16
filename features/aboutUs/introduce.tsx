@@ -1,11 +1,14 @@
+import bg from '@/assets/ezgif.com-video-to-gif.gif';
 import { NavigateButton } from '@/components/ui';
+import Image from 'next/image';
 
 type Props = {};
 
 function Introduce({}: Props) {
   return (
     <div className="relative mb-10">
-      <video
+      <Image src={bg} alt="Loading..." className="aspect-[17/6] w-full" />
+      {/* <video
         loop
         autoPlay
         muted
@@ -13,7 +16,7 @@ function Introduce({}: Props) {
         className="min-h-[20rem] object-cover"
       >
         <source src={'/video.mp4'} type="video/mp4" />
-      </video>
+      </video> */}
       <div className="absolute bottom-2 left-2 right-2 top-2 flex flex-col items-center justify-center">
         <h2 className="section-header mb-1 text-center text-4xl font-bold capitalize leading-tight">
           Unlimited music distribution to all platforms
