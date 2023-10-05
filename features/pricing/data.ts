@@ -37,7 +37,7 @@ export const proData: PricingData = {
     },
     {
       id: 2,
-      title: 'Keep 85% of your royalties',
+      title: 'Keep 80% of your royalties',
     },
     {
       id: 3,
@@ -56,7 +56,7 @@ export const superData: PricingData = {
     },
     {
       id: 2,
-      title: 'Keep 85% of your royalties',
+      title: 'Keep 80% of your royalties',
     },
     {
       id: 3,
