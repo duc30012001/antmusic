@@ -38,6 +38,7 @@
     "@babel/eslint-parser": "^7.22.5",
     "@types/cookies": "^0.7.7",
     "@types/http-proxy": "^1.17.11",
+    "critters": "^0.0.20",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",

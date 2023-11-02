@@ -26,6 +26,9 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  experimental: {
+    optimizeCss: true, // enabling this will enable SSR for Tailwind
+  },
 };
 
 module.exports = nextConfig;
