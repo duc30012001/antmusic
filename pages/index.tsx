@@ -1,17 +1,23 @@
-import { Highlight, Introduce } from '@/features/aboutUs';
+import Highlight from '@/features/aboutUs/highlight';
+import Introduce from '@/features/aboutUs/introduce';
 import ContactUS from '@/features/contact';
 import FAQ from '@/features/faq';
 import Pricing from '@/features/pricing';
 import { PublicLayout } from '@/layouts';
+import { NextPageWithLayout } from '@/utils/types';
 
-export default function HomePage() {
+const HomePage: NextPageWithLayout = () => {
   return (
-    <PublicLayout>
+    <>
       <Introduce />
       <Highlight />
       <Pricing />
       <FAQ />
       <ContactUS />
-    </PublicLayout>
+    </>
   );
-}
+};
+
+HomePage.Layout = PublicLayout;
+
+export default HomePage;

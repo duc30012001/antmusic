@@ -17,5 +17,3 @@ function AboutUs({}: Props) {
 }
 
 export default AboutUs;
-
-export { Highlight, Introduce };

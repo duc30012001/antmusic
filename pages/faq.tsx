@@ -1,10 +1,11 @@
 import FAQ from '@/features/faq';
 import { PublicLayout } from '@/layouts';
+import { NextPageWithLayout } from '@/utils/types';
 
-export default function FAQPage() {
-  return (
-    <PublicLayout>
-      <FAQ />
-    </PublicLayout>
-  );
-}
+const FAQPage: NextPageWithLayout = () => {
+  return <FAQ />;
+};
+
+FAQPage.Layout = PublicLayout;
+
+export default FAQPage;

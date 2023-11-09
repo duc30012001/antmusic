@@ -1,4 +1,4 @@
-const { i18n } = require('./next-i18next.config');
+// const { i18n } = require('./next-i18next.config');
 const path = require('path');
 require('dotenv').config;
 
@@ -22,7 +22,7 @@ const nextConfig = {
     LOGIN_URL: process.env.LOGIN_URL,
     ANT_GROUP_WEBSITE: process.env.ANT_GROUP_WEBSITE,
   },
-  i18n,
+  // i18n,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },

@@ -1,10 +1,11 @@
 import ContactUS from '@/features/contact';
 import { PublicLayout } from '@/layouts';
+import { NextPageWithLayout } from '@/utils/types';
 
-export default function ContactPage() {
-  return (
-    <PublicLayout>
-      <ContactUS />
-    </PublicLayout>
-  );
-}
+const ContactPage: NextPageWithLayout = () => {
+  return <ContactUS />;
+};
+
+ContactPage.Layout = PublicLayout;
+
+export default ContactPage;

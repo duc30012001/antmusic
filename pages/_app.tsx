@@ -23,6 +23,8 @@ const inter = Inter({
 });
 
 function App({ Component, pageProps }: AppPropsWithLayout) {
+  const Layout: React.ElementType =
+    Component.Layout as unknown as React.ElementType;
   return (
     <>
       <Seo
@@ -35,8 +37,10 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
       />
       <main className={`${inter.variable} font-sans`}>
         <ConfigProvider theme={themeConfig}>
+              <Layout>
           <Component {...pageProps} />
           <AppToast />
+          </Layout>
         </ConfigProvider>
       </main>
     </>

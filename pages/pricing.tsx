@@ -1,10 +1,11 @@
 import Pricing from '@/features/pricing';
 import { PublicLayout } from '@/layouts';
+import { NextPageWithLayout } from '@/utils/types';
 
-export default function PricingPage() {
-  return (
-    <PublicLayout>
-      <Pricing />
-    </PublicLayout>
-  );
-}
+const PricingPage: NextPageWithLayout = () => {
+  return <Pricing />;
+};
+
+PricingPage.Layout = PublicLayout;
+
+export default PricingPage;
